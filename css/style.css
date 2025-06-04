@@ -1,0 +1,62 @@
+:root {
+  --primary: #4834d4;
+  --dark-bg: rgba(0, 0, 0, 0.6);
+  --text-light: #f8f9fa;
+}
+
+/* Hero */
+.hero-section {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1732353216401-fe1d1e6cb826?w=1400&auto=format&fit=crop&q=80')
+    center/cover no-repeat;
+  height: 60vh;
+}
+.hero-section .overlay {
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--dark-bg);
+  z-index: 0;
+}
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Section Headings */
+.section-title {
+  border-bottom: 3px solid var(--primary);
+  display: inline-block;
+  padding-bottom: .25rem;
+}
+
+/* Cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+.btn-outline-primary {
+  border-radius: .375rem;
+  border-width: 2px;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+  color: var(--text-light);
+}
+
+/* List-group */
+.list-group-item {
+  transition: background-color 0.2s ease;
+}
+.list-group-item:hover {
+  background-color: #f1f1f1;
+}
